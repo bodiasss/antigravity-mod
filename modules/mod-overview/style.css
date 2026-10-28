@@ -1,0 +1,282 @@
+/* Antigravity Mod Overview - Minimalist Night Black & Dusty Peach Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --mo-bg-page: #000000;
+  --mo-bg-card: #0a0a0a;
+  --mo-bg-card-inner: #050505;
+  --mo-border: #1a1a1a;
+  --mo-border-subtle: #141414;
+  --mo-border-focus: #282828;
+  
+  --mo-peach: #E0A899;
+  --mo-peach-hover: #f0beb0;
+  
+  --mo-text-primary: #ededed;
+  --mo-text-secondary: #999999;
+  --mo-text-muted: #666666;
+  --mo-text-dim: #444444;
+  
+  --mo-ring-track: #1e1e1e;
+  --mo-status-green: #4ade80;
+  --mo-status-orange: #f59e0b;
+  --mo-status-red: #ef4444;
+  
+  --mo-radius: 8px;
+  --mo-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Container */
+.mod-overview-wrapper {
+  background-color: var(--mo-bg-page);
+  color: var(--mo-text-primary);
+  font-family: var(--mo-font-family);
+  font-size: 13px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  padding: 24px 20px;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.mod-overview-wrapper *,
+.mod-overview-wrapper *::before,
+.mod-overview-wrapper *::after {
+  box-sizing: border-box;
+}
+
+/* Header */
+.mod-overview-header {
+  margin-bottom: 20px;
+}
+
+.mod-overview-title {
+  margin: 0 0 4px 0;
+  color: var(--mo-peach);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.mod-overview-subtitle {
+  margin: 0;
+  color: var(--mo-text-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Feed List */
+.mod-overview-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Cards */
+.mod-card {
+  background: var(--mo-bg-card);
+  border: 1px solid var(--mo-border);
+  border-radius: var(--mo-radius);
+  padding: 14px 16px;
+  transition: border-color 0.18s ease;
+}
+
+.mod-card:hover {
+  border-color: var(--mo-border-focus);
+}
+
+.mod-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.mod-card-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mod-card-title {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #dfdfdf;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+}
+
+.mod-info-icon {
+  color: var(--mo-text-dim);
+  font-size: 11px;
+  cursor: help;
+  transition: color 0.15s ease;
+  user-select: none;
+}
+
+.mod-info-icon:hover {
+  color: var(--mo-peach);
+}
+
+.mod-card-accounts {
+  font-size: 11px;
+  color: var(--mo-text-muted);
+  word-break: break-all;
+}
+
+/* Metrics */
+.mod-card-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mod-metric-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.mod-metric-label {
+  font-size: 12px;
+  color: var(--mo-text-secondary);
+}
+
+.mod-metric-value-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mod-metric-pct {
+  font-size: 12.5px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--mo-text-primary);
+}
+
+/* SVG Circular Ring */
+.mod-ring-svg {
+  width: 20px;
+  height: 20px;
+  transform: rotate(-90deg);
+  display: block;
+}
+
+.mod-ring-bg {
+  stroke: var(--mo-ring-track);
+}
+
+.mod-ring-fill {
+  transition: stroke-dashoffset 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mod-ring-fill.status-green {
+  stroke: var(--mo-status-green);
+}
+
+.mod-ring-fill.status-orange {
+  stroke: var(--mo-status-orange);
+}
+
+.mod-ring-fill.status-red {
+  stroke: var(--mo-status-red);
+}
+
+/* Sub-sections within a card (e.g. Card 5) */
+.mod-subsections {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.mod-subsection-item {
+  border-top: 1px solid var(--mo-border-subtle);
+  padding-top: 10px;
+}
+
+.mod-subsection-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #c4c4c4;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Accordion */
+.mod-accordion-toggle {
+  background: transparent;
+  border: none;
+  padding: 6px 0 0 0;
+  font-family: inherit;
+  font-size: 11.5px;
+  color: var(--mo-text-muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.15s ease;
+  user-select: none;
+  outline: none;
+}
+
+.mod-accordion-toggle:hover {
+  color: var(--mo-peach);
+}
+
+.mod-accordion-arrow {
+  display: inline-block;
+  font-size: 10px;
+  transition: transform 0.22s ease;
+}
+
+.mod-accordion-toggle.expanded .mod-accordion-arrow {
+  transform: rotate(180deg);
+}
+
+.mod-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  opacity: 0;
+}
+
+.mod-accordion-content.open {
+  max-height: 240px;
+  opacity: 1;
+}
+
+.mod-breakdown-box {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: var(--mo-bg-card-inner);
+  border: 1px solid var(--mo-border-subtle);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mod-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+}
+
+.mod-breakdown-acc {
+  color: #bbb;
+  font-family: monospace;
+}
+
+.mod-breakdown-val {
+  color: var(--mo-text-muted);
+}

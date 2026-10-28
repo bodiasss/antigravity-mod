@@ -1,0 +1,12 @@
+{
+  "id": "mod-overview",
+  "name": "Mod Overview",
+  "version": "1.0.0",
+  "description": "Minimalist single-column quota and account usage monitor for Antigravity Modding Framework",
+  "author": "Antigravity UI Specialist",
+  "type": "ui-widget",
+  "entry": "index.js",
+  "style": "style.css",
+  "category": "system-monitor",
+  "dependencies": []
+}

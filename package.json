@@ -1,0 +1,32 @@
+{
+  "name": "antigravity-mod",
+  "version": "1.0.0",
+  "description": "Customization framework and mod-loader for Antigravity (themes, quotas, custom modules, multi-account overview)",
+  "main": "core/index.js",
+  "scripts": {
+    "start": "node scripts/preview-server.js",
+    "install-mod": "node scripts/install-mod.js",
+    "uninstall-mod": "node scripts/uninstall-mod.js",
+    "test-data": "node -e \"console.log(JSON.stringify(require('./core/data-service').getOverviewData(), null, 2))\""
+  },
+  "keywords": [
+    "antigravity",
+    "antigravity-mod",
+    "mod-loader",
+    "customization",
+    "quota-monitor",
+    "electron"
+  ],
+  "author": "11stoliarchuk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bodiasss/antigravity-mod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bodiasss/antigravity-mod/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

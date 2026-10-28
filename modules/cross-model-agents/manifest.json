@@ -1,0 +1,9 @@
+{
+  "id": "cross-model-agents",
+  "name": "Cross-Model Agent Orchestrator",
+  "version": "1.0.0",
+  "description": "Enables any model (e.g. Gemini 4 Pro) to autonomously invoke subagents on Claude Sonnet 3.5, DeepSeek, GPT-4o, or Gemini Flash",
+  "author": "Antigravity Mod Team",
+  "type": "orchestrator",
+  "entry": "index.js"
+}

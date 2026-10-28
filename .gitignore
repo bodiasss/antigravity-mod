@@ -1,0 +1,21 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+*.tmp
+.probe.tmp
+*.bak
+*.stock_backup
+
+# Local research dumps and scratch harnesses
+research/
+scratch/
+scratch_*.js
+
+# Local env / secrets
+.env
+.env.*
+
+# Editor folders
+.vscode/
+.idea/
