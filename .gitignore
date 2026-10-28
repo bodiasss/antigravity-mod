@@ -12,6 +12,10 @@ research/
 scratch/
 scratch_*.js
 
+# Build artifacts & executables
+*.exe
+build_installer/
+
 # Local env / secrets
 .env
 .env.*
